@@ -139,7 +139,7 @@ footer {
 
 .tarjeta-nosotros {
     background-color: $color_celeste;
-    border: 1px solid $color_negro;
+    border: 2px outset $color_dorado;
     width: 640px;
     margin: 30px auto 30px auto;
     @include shadow;
@@ -187,8 +187,7 @@ footer {
             row-gap: 15px;
             margin: 20px auto 30px auto;
                 .card {
-                    border: outset $color_dorado;
-                    border-width: 2px;
+                    border: 2px outset $color_dorado;
                     width: 400px;
                     @include shadow;
                     transition: 1s;
@@ -244,7 +243,7 @@ footer {
         .sidebar-tratamientos {
             background-color: $color_gris_oscuro;
             height: 100%;
-            @media screen and (max-width: 1100px) {
+            @media screen and (max-width: 1200px) {
                 width: 320px;
                 margin: auto;
                                                  }
@@ -319,7 +318,6 @@ footer {
 .productos {
     .productos__table {
         @include shadow;
-        background-color: $color_gris_claro;
         margin-top: 200px;
         width: 70%;
         padding: 15px;
@@ -395,7 +393,7 @@ footer {
                     height: auto;
                     background-color: $color_celeste;
                     color: $color_negro;
-                    border: 1px solid $color_negro;
+                    border: 2px outset $color_dorado;
                     @include shadow;
                     @media screen and (max-width: 992px) {
                         width: 300px;

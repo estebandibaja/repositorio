@@ -90,7 +90,7 @@ footer {
 
 .tarjeta-nosotros {
   background-color: #dbe2ef;
-  border: 1px solid #000000;
+  border: 2px outset #efb810;
   width: 640px;
   margin: 30px auto 30px auto;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); }
@@ -130,8 +130,7 @@ footer {
   row-gap: 15px;
   margin: 20px auto 30px auto; }
   .grid-tratamientos__columna1 .cards .card {
-    border: outset #efb810;
-    border-width: 2px;
+    border: 2px outset #efb810;
     width: 400px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     transition: 1s; }
@@ -173,7 +172,7 @@ footer {
   .grid-tratamientos__columna2 .sidebar-tratamientos {
     background-color: #c5cbd7;
     height: 100%; }
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 1200px) {
       .grid-tratamientos__columna2 .sidebar-tratamientos {
         width: 320px;
         margin: auto; } }
@@ -233,7 +232,6 @@ footer {
 
 .productos .productos__table {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  background-color: #e3e4e5;
   margin-top: 200px;
   width: 70%;
   padding: 15px;
@@ -294,7 +292,7 @@ footer {
       height: auto;
       background-color: #dbe2ef;
       color: #000000;
-      border: 1px solid #000000;
+      border: 2px outset #efb810;
       box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); }
       @media screen and (max-width: 992px) {
         .pag-contacto__columnas__columna2__locacion__tarjeta {
