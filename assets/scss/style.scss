@@ -240,11 +240,11 @@ footer {
                }
                 }
     &__columna2 {
-        min-width: 200px;
+        min-width: 260px;
         .sidebar-tratamientos {
             background-color: $color_gris_oscuro;
             height: 100%;
-            @media screen and (max-width: 992px) {
+            @media screen and (max-width: 1100px) {
                 width: 320px;
                 margin: auto;
                                                  }
@@ -252,8 +252,8 @@ footer {
                 font: {
                     size: 16px;
                       }
-                padding: 20px;
-                line-height: 1.5em;
+                padding: 24px;
+                line-height: 2em;
                 color: $color_negro;
                 text-align: left;
                      }
