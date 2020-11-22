@@ -1,7 +1,7 @@
 {
-  "name": "coder15",
+  "name": "Centro de Estética Caballito",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sitio web del Centro de Estética Caballito, el mejor lugar para realizarse tratamientos faciales y corporales en Buenos Aires.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
