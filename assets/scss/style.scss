@@ -2,13 +2,13 @@
 $color_celeste: #dbe2ef;
 $color_gris_oscuro: #c5cbd7;
 $color_gris_claro: #e3e4e5;
-$color_verde: #20B2AA;
+$color_verde: #245956;
 $color_blanco: #ffffff;
 $color_negro: #000000;
 $color_dorado: #efb810;
 
 @mixin shadow {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 html {
@@ -91,26 +91,28 @@ h1 {
 
 /* Pie de página */
 
-footer {
+.footer {
+    height: 60px;
+    width: 100%;
+    background-color: $color_gris_claro;
     display: flex;
     justify-content: center;
-    align-content: center;
-    background-color: $color_gris_claro;
-    width: auto;
-    height: auto;
-    padding: 10px;
-    font: {
-        size: 16px;
-        color: $color_negro;
-          }
+    text-align: center;
+    margin: auto;    
+    padding: 20px;
+}
+
+.fa {
+    color: $color_negro;
+    margin: 0 10px 0 0;
 }
 
 /* Home */
 
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
-    position: static;
+.text-carrousel {
+    width: 50%;
+    margin: auto;
+    background-color: $color_verde;
 }
 
 .text-home {
@@ -139,7 +141,7 @@ footer {
 
 .tarjeta-nosotros {
     background-color: $color_celeste;
-    border: 2px outset $color_dorado;
+    border: 1px outset;
     width: 640px;
     margin: 30px auto 30px auto;
     @include shadow;
@@ -186,14 +188,21 @@ footer {
             align-items: center;
             row-gap: 15px;
             margin: 20px auto 30px auto;
+            @media screen and (max-width: 992px) {
+                padding: 5px;
+                                                 }
                 .card {
-                    border: 2px outset $color_dorado;
                     width: 400px;
                     @include shadow;
                     transition: 1s;
                     @media screen and (max-width: 992px) {
                         width: 300px;
                                                          }
+                    .card-text {
+                        .card-text-list {
+                            list-style-type: "✓ ";
+                        }
+                    }
                 &:hover {
                     -ms-transform: scale(1.1);
                     -webkit-transform: scale(1.1);
@@ -204,40 +213,9 @@ footer {
                         transform: none;
                                                          }
                         }
-                    .card__titulo {
-                        background-color: $color_verde;
-                        .card__titulo-texto {
-                            padding: 12px;
-                            color: $color_blanco;
-                            text-transform: uppercase;
-                                font: {
-                                    family: Montserrat;
-                                    weight: 700;
-                                    size: 18px !important;
-                                    }
-                                                }
-                                  }
-                    .card__texto1 {
-                                padding: 12px;
-                                background-color: $color_celeste;
-                                font: {
-                                    size: 16px;
-                                      }
-                                  }
-                    .card__texto2 {
-                        padding: 12px;
-                        background-color: $color_blanco;
-                        font: {
-                            size: 16px;
-                              }
-                        &__list {
-                            list-style-type: "✓ ";
-                            line-height: 1.5em;
-                               }
-                                  }                 
-                      }
-               }
+                    }
                 }
+            }
     &__columna2 {
         min-width: 260px;
         .sidebar-tratamientos {
@@ -301,64 +279,25 @@ footer {
 
 /* Productos */
 
-#img-productos {
-    width: 80%;
-    margin: auto;
+.card-columns {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 10px;
-    .img-productos {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 20%;
-    }
-}
-
-.productos {
-    .productos__table {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 15px;
+    margin: 20px auto 30px auto;
+    @media screen and (max-width: 992px) {
+        padding: 5px;
+                                         }
+    .card {
+        width: 400px;
         @include shadow;
-        margin-top: 200px;
-        width: 70%;
-        padding: 15px;
-        margin: auto;
         @media screen and (max-width: 992px) {
-            width: 320px;
-                                  }
-        th {
-            border: 2px outset $color_dorado;
-            background-color: $color_verde;
-            color: $color_blanco;
-            width: 600px;
-            text-transform: uppercase;
-            font-size: 16px;
-            letter-spacing: 1.5px;
-            text-align: center;
-            line-height: 1.5em;
-            @media screen and (max-width: 992px) {
-                font-size: 14px;
-                                                 }
-           }
-        td {
-            border: 2px outset $color_dorado;
+        width: 300px;
+                                            }
         }
-        .productos__table__lista {
-            padding: 5px;
-            &__productos1,
-            &__productos2 {
-                font-size: 16px;
-                list-style-type: square;
-                line-height: 2em;
-                margin-left: 15px;
-                text-align: left;
-                @media screen and (max-width: 992px) {
-                    font-size: 14px;
-                    line-height: 1.2em;                    
-                                                     }
-                          }
-                                 }
-                      }
-}
+    }
 
 /* Contacto */
 
@@ -393,7 +332,7 @@ footer {
                     height: auto;
                     background-color: $color_celeste;
                     color: $color_negro;
-                    border: 2px outset $color_dorado;
+                    border: 1px outset;
                     @include shadow;
                     @media screen and (max-width: 992px) {
                         width: 300px;
