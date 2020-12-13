@@ -158,7 +158,7 @@ h1 {
   min-width: 260px; }
   .grid-tratamientos__columna2 .sidebar-tratamientos {
     background-color: #c5cbd7;
-    height: auto; }
+    height: 60%; }
     @media screen and (max-width: 1200px) {
       .grid-tratamientos__columna2 .sidebar-tratamientos {
         width: 320px;

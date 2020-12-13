@@ -220,7 +220,7 @@ h1 {
         min-width: 260px;
         .sidebar-tratamientos {
             background-color: $color_gris_oscuro;
-            height: auto;
+            height: 60%;
             @media screen and (max-width: 1200px) {
                 width: 320px;
                 margin: auto;
