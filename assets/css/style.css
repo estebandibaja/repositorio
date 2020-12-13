@@ -162,7 +162,7 @@ h1 {
     @media screen and (max-width: 1200px) {
       .grid-tratamientos__columna2 .sidebar-tratamientos {
         width: 320px;
-        height: 100%;
+        height: 100% !important;
         margin: auto; } }
     .grid-tratamientos__columna2 .sidebar-tratamientos__texto {
       font-size: 16px;
